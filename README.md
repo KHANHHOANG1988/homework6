@@ -50,7 +50,7 @@ You are required to submit the following for review:
 * The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
         https://github.com/KHANHHOANG1988/homework6.git
 * screenshot of deployed page
-    https://github.com/KHANHHOANG1988/homework6/blob/master/Screenshot%20(5).png
+   https://github.com/KHANHHOANG1988/homework6/blob/master/Screenshot.png
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
