@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="./style.css">
+    <title>Weather Dashboard</title>
     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://kit.fontawesome.com/9aa3b96097.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<nav>Weather forcast</nav>
-<Main class="row">    
-    <section class="col-md-3">
-        <div class="searchForm">
-            <P>Search for a city:</P>
-            <form class="search form-inline" id="searchbox">
-              <input type="text" id="location" placeholder="Enter a city">
-              <button type="button" class="btn btn-info">Search</button>
-            </form>
-        </div>
-        <div  class="btn-group-vertical">  
-            <button id="Austin">Austin</button>  
-            <button id="Chicago"> Chicago</button> 
-            <button id="NewYork">New York</button>  
-            <button id="Orlando">Orlando</button> 
-            <button id="SanFransisco">San Fransisco</button>
-            <button id="Seattle">Seattle</button>
-            <button id="Denver">Denver</button>
-            <button id="Atlanta">Atlanta</button>
-        </div>    
-    </section>    
-    <section class="col-md-9">
-    <!-- current weather card-->
-    <div id= "curWeatherCard" class="card ">
-        <h1 >Current City Weather</h1>
-    </div>
-    <h4>5-day Forecast:</h4>
-    <div id="dayForcast" class="container-fluid row m-0 p-0">
 
-    </div>
-    </section>
-</Main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"></script>
+<body>
+    <nav class="header bg-dark text-light sticky-top text-center m-0 p-3"> Weather Dashboard </nav>
+   
+    <main class="container-fluid row m-0 p-0">
+        <section class="sidebar col-sm-5 col-md-4 col-lg-3 bg-light">
+
+            <form id="citySearchInput">
+                <h2>Search for a City:</h2>
+                <div class="input-group mb-3">
+                    <input type="text" id="cityInput" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+
+            <div id="cityBtns" class="btn-group-vertical bg-white w-100 text-left">
+             
+            </div>
+        </section>
+
+        <section class="col pt-3">
+            <div id="currentWeather" class="card mb-3">
+                <h1 class="p-3">Please start by searching for a city</h1>
+            </div>
+            <h4>5-day Forecast:</h4>
+            <div id="Forcast" class="container-fluid row m-0 p-0">
+
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./scripts.js"></script>
 </body>
+
 </html>
