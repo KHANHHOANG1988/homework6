@@ -6,13 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"></script>
+    
 </head>
 <body>
 <nav>Weather forcast</nav>
-<div class="row time-block">
-    <div class="col-md-3">
+<Main class="row">    
+    <section class="col-md-3">
         <div class="searchForm">
             <P>Search for a city:</P>
             <form class="search form-inline" id="searchbox">
@@ -20,33 +19,29 @@
               <button type="button" class="btn btn-info">Search</button>
             </form>
         </div>
-        <div  id="Austin">Austin</div>
-        <div  id="Chicago"> Chicago</div>
-        <div  id="NewYork">New York</div>
-        <div  id="Orlando">Orlando</div>
-        <div  id="SanFransisco">San Fransisco</div>
-        <div  id="Seattle">Seattle</div>
-        <div  id="Denver">Denver</div>
-        <div  id="Atlanta">Atlanta</div>
- </div>
-    <div class="col-md-9">
-        <div class="row">
-            <ul class="currentWeather">
-                <li id="currentLocation"></li>
-                <li>Tempurature:</li>
-                <li>Humidity:</li>
-                <li>Wind:</li>
-            </ul>
-        </div>
-        <div class="row">
-            <div class="col-md-2">a</div>
-            <div class="col-md-2">b</div>
-            <div class="col-md-2">c</div>
-            <div class="col-md-2">d</div>
-            <div class="col-md-2">e</div>
-            <div class="col-md-2">f</div>
-        </div>
+        <div  class="btn-group-vertical">  
+            <button id="Austin">Austin</button>  
+            <button id="Chicago"> Chicago</button> 
+            <button id="NewYork">New York</button>  
+            <button id="Orlando">Orlando</button> 
+            <button id="SanFransisco">San Fransisco</button>
+            <button id="Seattle">Seattle</button>
+            <button id="Denver">Denver</button>
+            <button id="Atlanta">Atlanta</button>
+        </div>    
+    </section>    
+    <section class="col-md-9">
+    <!-- current weather card-->
+    <div id= "curWeatherCard" class="card ">
+        <h1 >Current City Weather</h1>
     </div>
-</div>
+    <h4>5-day Forecast:</h4>
+    <div id="dayForcast" class="container-fluid row m-0 p-0">
+
+    </div>
+    </section>
+</Main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"></script>
 </body>
 </html>
